@@ -19,6 +19,7 @@ class ManageCog(commands.Cog):
         logger.info("[ManageCog __init__()] initializing the TestCog")
         bot.add_check(self.check_test_environment)
         bot.add_check(self.check_privilege)
+        bot.add_check(self.validate_channel)
         self.bot = bot
         self.config = config
         self.help_dict = self.config.get_help_json()
@@ -68,6 +69,20 @@ class ManageCog(commands.Cog):
                         )
                     return (len(shared_roles) > 0)
         return False
+
+    async def validate_channel(self, ctx):
+        if self.config.get_config_value("basic_config", "ENVIRONMENT") != 'PRODUCTION':
+            return True
+        else:
+            for command_info in self.help_dict['commands']:
+                if "{}".format(ctx.command) in command_info['name']:
+                    if command_info['validChannel'] == "all":
+                        return True
+                    elif ctx.channel in command_info['validChannel']:
+                        return True
+                    else:
+                        channels = ["<#{}>".format(discord.utils.get(ctx.guild.text_channels, name=channel).id) for channel in command_info['validChannel']]
+                        await ctx.send("Please use the command {} in one of the following channels: {}".format(ctx.command, channels))
 
     ########################################################
     # Function that gets called whenever a commmand      ##

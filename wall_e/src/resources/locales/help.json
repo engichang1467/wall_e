@@ -5,18 +5,21 @@
 		},
 		{	"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "ping" ],
 			"example": [ ".ping" ],
 			"description": [ "returns pong!" ]
 		},
 		{ 	"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "echo" ],
 			"example": [ ".echo <arg>" ],
 			"description": [ "returns <arg>" ]
 		},
 		{ 	"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "emojispeak" ],
 			"example": [ ".emojispeak <args>" ],
 			"description": [ "returns <args> but in emoji format" ]
@@ -28,6 +31,7 @@
 		},
 		{ 	"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "newrole" ],
 			"example" : [ ".newrole <arg>" ],
 			"description": [ "creates roles <arg>" ]
@@ -35,6 +39,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "deleterole" ],
 			"example" : [ ".deleterole <arg>" ],
 			"description": [ "deletes roles <arg>" ]
@@ -42,6 +47,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "iam" ],
 			"example" : [ ".iam <arg>" ] ,
 			"description": [ "adds you to roles <arg>" ]
@@ -49,6 +55,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "iamn" ],
 			"example" : [ ".iamn <arg>" ],
 			"description": [ "removes you from roles <arg>" ]
@@ -56,6 +63,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "whois" ],
 			"example" : [ ".whois <arg>" ],
 			"description": [ "returns everyone who has roles <arg>" ]
@@ -63,6 +71,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "roles"],
 			"example" : [ ".roles"],
 			"description": [ "will display all the self-assignable roles that exist" ]
@@ -70,6 +79,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "Roles" ],
 			"example" : [ ".Roles" ],
 			"description": [ "will display all the Mod/Exec/XP Assigned roles that exist" ]
@@ -80,6 +90,7 @@
 								"manage_roles",
 								"administrator"
 							] ,
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": ["purgeroles" ],
 			"example": [ ".purgeroles" ],
 			"description": [ "deletes all empty self-assignable roles" ]
@@ -93,6 +104,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [
 						"help",
 						"man"
@@ -110,6 +122,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "poll" ],
 			"example": [
 							"`.poll \"<questions>\"`",
@@ -124,6 +137,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "urban" ],
 			"example": [".urban <arg>"],
 			"description": [ "returns definition from urban dictionary of <arg>" ]
@@ -131,6 +145,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "wolfram" ],
 			"example": [".wolfram <arg>"],
 			"description": [ "returns the result of passing <arg> to Wolfram Alpha" ]
@@ -144,6 +159,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "remindmein" ],
 			"example": [ ".remindmein <x minutes|hours|days> to <subject>" ],
 			"description": [ "create a reminder" ]
@@ -151,6 +167,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "showreminders" ],
 			"example": [ ".showreminders" ],
 			"description": [ "Show all your active reminders and their corresponding messageIDs" ]
@@ -158,6 +175,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "deletereminder" ],
 			"example": [ ".deletereminder <arg>" ],
 			"description": [
@@ -174,6 +192,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "Bot_manager" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "load" ],
 			"example": [ ".load <arg>" ],
 			"description": [
@@ -184,6 +203,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "Bot_manager" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "unload" ],
 			"example": [ ".unload <arg>" ],
 			"description": [
@@ -194,6 +214,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "Bot_manager" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "reload" ],
 			"example": [".reload <arg>" ],
 			"description": [
@@ -203,6 +224,7 @@
 		},{
 			"access" : "roles",
 			"roles" : ["Bot_manager"],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": ["frequency"],
 			"example": [
 				".frequency command",
@@ -219,6 +241,7 @@
 		},{
 			"access": "roles",
 			"roles" : [ "Bot_manager" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "exc" ],
 			"example": [ ".exc <arg>" ],
 			"description": [
@@ -235,6 +258,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "Minions" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [
 						"embed",
 						"em"
@@ -249,6 +273,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "Minions" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [
 						"modspeak",
 						"warn"
@@ -265,6 +290,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "here" ],
 			"example": [ ".here <filters> ..." ],
 			"description": [
@@ -281,6 +307,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "sfu" ],
 			"example": [ ".sfu <arg>" ],
 			"description": [ "Returns the calendar description from current semester of <arg>" ]
@@ -288,6 +315,7 @@
 		{
 			"access": "roles",
 			"roles" : [ "@everyone" ],
+			"validChannel" : [ "bot-commands-and-misc"],
 			"name": [ "outline" ],
 			"example": [ ".outline <arg0> [<arg1> <arg2> next]" ],
 			"description": [
