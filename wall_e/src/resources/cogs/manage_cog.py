@@ -81,8 +81,17 @@ class ManageCog(commands.Cog):
                     elif ctx.channel in command_info['validChannel']:
                         return True
                     else:
-                        channels = ["<#{}>".format(discord.utils.get(ctx.guild.text_channels, name=channel).id) for channel in command_info['validChannel']]
-                        await ctx.send("Please use the command {} in one of the following channels: {}".format(ctx.command, channels))
+                        channels = [
+                            "<#{}>".format(
+                                discord.utils.get(ctx.guild.text_channels, name=channel).id
+                            ) for channel in command_info['validChannel']
+                        ]
+                        await ctx.send(
+                            "Please use the command {} in one of the following channels: {}".format(
+                                ctx.command,
+                                channels
+                            )
+                        )
 
     ########################################################
     # Function that gets called whenever a commmand      ##
